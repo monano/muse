@@ -1,0 +1,6 @@
+<img src=<%=@artist.img%> height="500", width="500">
+<h1><%= @artist.name %> </h1>
+<h1>Born in <%= @artist.hometwon %> </h1>
+<h1>Albums No.  <%= @artist.albums %> </h1>
+<button><%= link_to 'edit', edit_artist_path(@artist) %></button>
+<button><%= link_to 'delete', artist_path(@artist), method: :delete %></button>

@@ -1,0 +1,29 @@
+<%= form_for :artist do |f| %>
+
+        <%= f.label :name, 'Name : ' %><br>
+        <%= f.text_field :name %><br><br>
+
+        <%= f.label :albums, 'Albums : ' %><br>
+        <%= f.text_field :albums %><br><br>
+
+        <%= f.label :hometwon, 'Home Town : ' %><br>
+        <%= f.text_field :hometwon %><br><br>
+
+        <%= f.label :img, 'Image :' %><br>
+        <%= f.text_field :img  %><br><br>
+
+        <%= f.submit " Save " %>
+
+<% end %>
+
+    <%# <form> %>
+
+        <%# Artist Name:<br>
+        <input type='text' name='name'><br> %>
+       
+        <%# Hometown:<br>
+        <input type='text' name='hometwon'><br>
+        
+        <input type='submit' value='submit'> %>
+
+    <%# </form> %>

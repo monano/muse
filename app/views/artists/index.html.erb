@@ -1,0 +1,13 @@
+<h1>All the Artists</h1>
+<%= link_to 'Add an Artist', new_artist_path%><hr><br>
+<% @artist.each do |artist| %>
+<tr>
+<%# <%= image_tag(artist.img, size: "100x100")><br> %>
+<img src=<%= artist.img %> height="100", width="100" ><br>
+<td><%= link_to artist.name, artist_path(artist)%></td><br>
+<td><%= artist.hometwon %></td><br>
+<td><%= artist.albums %></td> <br>
+</tr>
+<% end %>
+
+<%# <td><%= link_to artist.name, artisthome_path(artist) </td> %>
